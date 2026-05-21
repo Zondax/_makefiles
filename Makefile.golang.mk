@@ -88,7 +88,7 @@ go-lint: ## Lint
 
 # Dependency helpers
 go-lint-install: ## Install go linter `golangci-lint`
-	@curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(shell go env GOPATH)/bin latest
+	@curl -sSfL https://golangci-lint.run/install.sh | sh -s -- -b $(shell go env GOPATH)/bin latest
 
 ## Test
 go-test: go-generate ## Run the tests of the project, excluding integration tests.
